@@ -6,14 +6,6 @@
 
 body{
     background-color: #FFEEDF;
-
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    /* flex direction: column; */
-
-    height: 100vh;
-
 }
 
 button{
@@ -26,14 +18,18 @@ button{
     color: #FFEEDF;
     font-size: 200px;
     font-family: 'Montserrat', sans-serif;
-    /* font-weight: light; */
+    font-weight: 300;
 
-     display: flex;
-    justify-content: center;
-    align-items: center;
+/*     display: block; */
+    position: absolute; /* takig the element out of the rendering flow*/
 
-}
+    top: 50%;
+    left: 50%;
 
-span {
-    height: 270px;
+    transform: translate(-50%, -50%);
+
+    width: 120px;
+    height: 120px;
+    font-size: 100px;
+
 }
