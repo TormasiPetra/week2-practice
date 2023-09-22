@@ -34,6 +34,7 @@ body {
     background-color: rgb(23, 82, 62);
     color: beige;
     border-color: bisque;
+    border-radius: 20px;
 }
 
 .country h2 {
