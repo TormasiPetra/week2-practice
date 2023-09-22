@@ -1,44 +1,46 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+ 
+    /* border: 0; */
+    box-sizing: border-box;
 }
 
-body{
-    background-color: #FFEEDF;
+body {
+    background-color: blanchedalmond;
+    
 }
 
-button{
-    background-color:  #1C5A4E;
-    width: 240px;
-    height: 240px;
+#root {
+    display: flex;
+    flex-direction: row; /* column */
+    flex-wrap: wrap; /* ha több elem nem fér el egy sorban akkor tördeli az elemeket  */
+    gap: 20px; /* elemek közé tszünk eltolást */ 
+    justify-content: center; /* flexstart, flexend */
+    align-items: center;
 
-    border-radius: 120px;
-
-    color: #FFEEDF;
-    font-size: 200px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-
-/*     display: block; */
-    position: absolute; /* takig the element out of the rendering flow*/
-
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-/*     width: 120px;
-    height: 120px;
-    font-size: 100px;
- */
+    padding: 20px;
 }
 
-span {
-    position: absolute;
-    top: -5px;
-    left: 50%;
+.country {
+    width: 300px;
+    min-height: 168px;
+/*  margin-right: 50px;  */   
+/*  margin: 20px;  az elem köré teszi az eltolást */  
+    padding: 20px; /* az elem belsejébe teszi az eltolást */ 
+    border: 2px /* solid */ dashed black;
 
-    transform: translateX(-50%);
+/*     border-style: dotted; */
+    background-color: rgb(23, 82, 62);
+    color: beige;
+    border-color: bisque;
+}
 
+.country h2 {
+    min-height: 80px;
+    text-align: center;
+}
+.country p {
+
+    text-align: center;
 }
