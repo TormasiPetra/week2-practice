@@ -1,7 +1,7 @@
-console.log ('loaded');
+ console.log ('loaded');
 
 let rootElement = document.querySelector('#root');
-
+ 
 // console.log(rootElement)
 
 //let htmlContent = "<h2>Hello world, I'm here!</h2>";
@@ -50,3 +50,19 @@ fetch('https://restcountries.com/v3.1/all')
         `)
     }
 })
+
+
+function stringSplosion(str){
+
+    let result = "" 
+     for (let i=0; i<str.length; i++){
+       result = result + str.slice(0, i+1)
+     }
+    return result
+  }
+
+  function logger(text){
+    console.log(text)
+  }
+
+logger (stringSplosion("Code"))
